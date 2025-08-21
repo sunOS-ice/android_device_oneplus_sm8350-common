@@ -38,6 +38,7 @@ def lib_fixup_vendor_suffix(lib: str, partition: str, *args, **kwargs):
 lib_fixups: lib_fixups_user_type = {
     **lib_fixups,
     (
+        'vendor.oplus.hardware.displaypanelfeature@1.0',
         'vendor.oplus.hardware.osense.client-V1-ndk_platform',
     ): lib_fixup_odm_suffix,
     (
